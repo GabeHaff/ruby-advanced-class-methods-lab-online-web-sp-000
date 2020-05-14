@@ -12,6 +12,8 @@ def self.create
 def self.new_by_name(song_name)
   song = Song.new 
   song.name = song_name
+  song
+end 
 
   def self.all
     @@all
