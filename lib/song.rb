@@ -9,8 +9,8 @@ def initialize(name)
 end 
 #
 
-def Song.create
-Song.new = @name
+def self.create
+song=song.new 
 @@all << Song.new
 self.save 
 end
