@@ -35,9 +35,9 @@ end
   
 def self.new_from_file_name(file_name) #class constructor 
   new_song = self.new
-new_song.name = file_name.split(" - ")[1].chomp(".mp3")
+ new_song.name = file_name.split(" - ")[1].chomp(".mp3")
 new_song.artist_name = file_name.split(" - ")[0]
-new_song
+  new_song
 ## class:song, self=new_song. given 
 #"taylor swift- Blank space.mp3", or "file_name", 
 #remove the dashes and the "mp3" from the end , separating into 
