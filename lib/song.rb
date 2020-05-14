@@ -43,6 +43,7 @@ new_song.artist_name = file_name.split(" - ")[0]
 #remove the dashes and the "mp3" from the end , separating into 
 #"name, artist, based on argument file_name"
 end
+end 
   
   
   
