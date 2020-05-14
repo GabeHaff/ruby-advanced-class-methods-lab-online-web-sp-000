@@ -10,8 +10,7 @@ end
 #
 
 def self.create
-song=song.new 
-@@all << Song.new
+song = Song.new
 self.save 
 end
 
