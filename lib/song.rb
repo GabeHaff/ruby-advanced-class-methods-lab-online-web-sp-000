@@ -34,7 +34,7 @@ def self.alphabetical #also a class method
 end 
   
 def self.new_from_file_name(song_name)
-  Song.new_from_file_name=
+  Song.new_from_file_name
   
 
   def self.all
