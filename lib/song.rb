@@ -9,7 +9,7 @@ end
 #
 
 def Song.create
-self.initialize.all
+self.all.initialize
 
 end
 
