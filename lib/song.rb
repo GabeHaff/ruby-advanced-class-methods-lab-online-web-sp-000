@@ -1,6 +1,9 @@
 class Song
   attr_accessor :name, :artist_name
   @@all = []
+  
+  
+  
 
 
 def self.create
@@ -41,16 +44,8 @@ def self.new_from_file_name(file_name) #class constructor
 end
 
   
-  
+end 
   
  
 
-  def self.all
-    @@all
-  end
-#save= instance method, not acting on the class for its definition/execution/call
-  def save
-    self.class.all << self
-  end
-
-end
+ 
