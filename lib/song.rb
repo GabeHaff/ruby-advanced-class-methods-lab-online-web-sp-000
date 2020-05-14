@@ -10,13 +10,14 @@ class Song
     self.class.all << self
   end
 
-def self.create
+def self.create #class constructor , returns init/saved
   song = Song.new
    song.save 
   song
  end
 
-def self.new_by_name(song_name)
+def self.new_by_name(song_name) #constructor, returns
+#instance of song. 
   song = Song.new 
   song.name = song_name
   song
@@ -47,13 +48,13 @@ def Song.new_from_filename(file_name) ##class constructor
   new_song
 end
 
-def Song.create_from_filename(file_name)
+def Song.create_from_filename(file_name) #class constructor 
   new_song= self.create
   new_song.name = file_name.split(" - ")[1].chomp(".mp3")
   new_song.artist_name = file_name.split(" - ")[0]
   @@all << new_song
 end 
-def self.destroy_all 
+def self.destroy_all #resets "@@all" to empty array, wiping song instances
   @@all.clear
 end 
 end 
