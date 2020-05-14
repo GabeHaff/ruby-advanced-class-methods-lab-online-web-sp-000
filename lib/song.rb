@@ -33,8 +33,8 @@ def self.alphabetical #also a class method
   @@all.sort_by {|song| song.name}
 end 
   
-def self.new_from_file_name
-  
+def self.new_from_file_name(song_name)
+  self.create
   
 
   def self.all
