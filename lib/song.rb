@@ -22,7 +22,8 @@ song
 end 
 
 def self.find_by_name(song_name)
-  @@all.find{|
+  self.all.find{|song| song.name == name}
+end 
 
   def self.all
     @@all
