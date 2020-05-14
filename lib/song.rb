@@ -5,7 +5,7 @@ class Song
   def self.all
     @@all
   end
-
+#save= instance method, default
   def save
     self.class.all << self
   end
