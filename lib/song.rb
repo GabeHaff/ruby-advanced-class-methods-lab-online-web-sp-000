@@ -10,7 +10,7 @@ end
 #
 
 def Song.create
-Song.new = name 
+Song.new = @name
 @@all << Song.new
 self.save 
 end
