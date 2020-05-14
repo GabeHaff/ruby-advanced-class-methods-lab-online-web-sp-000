@@ -4,11 +4,12 @@ class Song
 
 def initialize
   @name=name 
-  @@all=
+  @@all << self 
+end 
 
 
 def Song.create
-
+Song.initialize.all 
 
 end
 
