@@ -10,7 +10,8 @@ def self.create
  end
 
 def self.new_by_name(song)
-  song=Song.new 
+  song = Song.new 
+  
 
   def self.all
     @@all
