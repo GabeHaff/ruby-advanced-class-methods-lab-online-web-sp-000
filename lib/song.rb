@@ -34,7 +34,11 @@ def self.alphabetical #also a class method
 end 
   
 def self.new_from_file_name(song_name)
-  
+  new_song = self.new
+new_song.name = filename.split(" - ")[1].chomp(".mp3")
+new_song.artist_name = filename.split(" - ")[0]
+new_song
+end
   
   
   new_song = Song.new
