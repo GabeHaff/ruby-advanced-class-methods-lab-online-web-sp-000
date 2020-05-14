@@ -48,8 +48,8 @@ def Song.new_from_filename(file_name) ##class constructor
 end
 
 def self.create_from_filename(file_name)
-  song.new_from_filename(file_name)
- song.save
+  Song.new_from_filename(file_name)
+ Song.save
   new_song 
 end 
 end 
