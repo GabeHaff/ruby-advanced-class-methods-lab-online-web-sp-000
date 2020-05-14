@@ -28,7 +28,7 @@ end
 def self.find_or_create_by_name(song_name)
   self.find_by_name(song_name) || self.create_by_name(song_name)
 end 
-def Song.alphabetical(song_name)
+def self.alphabetical(song_name)
   self.sort_by{|song| song_name == song.name}
 end 
   
