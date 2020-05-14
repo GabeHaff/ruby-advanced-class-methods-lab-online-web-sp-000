@@ -7,6 +7,7 @@ def initialize(name)
   @name = name 
   @@all << self 
 end 
+end 
 #
 
 def Song.create
@@ -14,7 +15,7 @@ Song.new = name
 @@all << Song.new
 self.save 
 end
-end 
+
 
   def self.all
     @@all
