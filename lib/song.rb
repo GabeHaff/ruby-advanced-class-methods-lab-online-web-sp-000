@@ -11,7 +11,7 @@ end
 
 def self.create
 song = Song.new
-self.save 
+song.save 
 end
 
 
