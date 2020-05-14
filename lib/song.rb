@@ -37,7 +37,8 @@ def self.new_from_file_name(song_name)
   
   
   
-  new_song=song.new
+  new_song = Song.new
+  artist_name = 
   
 
   def self.all
