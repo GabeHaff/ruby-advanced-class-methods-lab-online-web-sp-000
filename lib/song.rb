@@ -51,11 +51,11 @@ def Song.create_from_filename(file_name)
   new_song= self.create
   new_song.name = file_name.split(" - ")[1].chomp(".mp3")
   new_song.artist_name = file_name.split(" - ")[0]
-  new_song
+  @@all << new_song
 end 
 def self.destroy_all 
   @@all.clear
-
+end 
 end 
   
  
