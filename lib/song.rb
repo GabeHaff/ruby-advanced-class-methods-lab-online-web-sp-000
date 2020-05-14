@@ -40,7 +40,8 @@ new_song.artist_name = file_name.split(" - ")[0]
 new_song
 ## class:song, self=new_song. given 
 #"taylor swift- Blank space.mp3", or "file_name", 
-#remove the dashes and the "mp3" from the end 
+#remove the dashes and the "mp3" from the end , separating into 
+#"name, artist, based on argument file_name"
 end
   
   
